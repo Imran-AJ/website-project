@@ -1,67 +1,441 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Cuts</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Urban Cuts | Barbershop</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<nav class="navbar">
 
-    <div class="logo">Urban Cuts</div>
+    <header class="navbar">
 
-    <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            Urban Cuts
+        </a>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#gallery">Gallery</a>
+
+            <a href="#about">About</a>
+
+            <a href="#visit">Visit</a>
+
+            <a href="#reviews">Reviews</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
     </div>
 
-</nav>
+</header>
 
-    <section class="hero" id="home">
+           
+    <main>
 
-        <h1>Urban Cuts</h1>
+        <section class="hero" id="home">
 
-        <p>Fresh cuts. Clean style.</p>
+            <div class="container hero-content">
 
-        <a href="https://wa.me/2347014997531" class="button">
-    Book on WhatsApp
-</a>
+                <p class="eyebrow">
+                    PREMIUM BARBERSHOP
+                </p>
 
-    </section>
+                <h1>
+                    Look Sharp.<br>
+                    Feel Confident.
+                </h1>
+
+                <p class="hero-text">
+                    Fresh cuts, clean fades and professional
+                    grooming for everyone.
+                </p>
+
+                <a
+                    href="https://wa.me/2347014997531"
+                    class="button">
+                    Book an Appointment
+                </a>
+
+            </div>
+
+        </section>
 
 
-    <section class="services" id="services">
+        <section class="services" id="services">
 
-        <h2>Our Services</h2>
+            <div class="container">
 
-        <div class="service">
-            <h3>Haircut</h3>
-            <p>₦1,000</p>
+                <p class="section-label">
+                    WHAT WE OFFER
+                </p>
+
+                <h2>Our Services</h2>
+
+                <div class="service-grid">
+
+                    <div class="service-card">
+
+                        <h3>Haircut</h3>
+
+                        <p>
+                            Clean and stylish haircut
+                            tailored to you.
+                        </p>
+
+                        <strong>₦1,000</strong>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <h3>Haircut + Beard</h3>
+
+                        <p>
+                            Complete grooming with
+                            a sharp beard finish.
+                        </p>
+
+                        <strong>₦1,200</strong>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <h3>Kids Haircut</h3>
+
+                        <p>
+                            Fresh and comfortable
+                            cuts for kids.
+                        </p>
+
+                        <strong>₦700</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <p class="section-label">
+            OUR WORK
+        </p>
+
+        <h2>Fresh Cuts.<br>Clean Finishes.</h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+    src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=900&q=85"
+    alt="Professional haircut">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85"
+                    alt="Barber giving a haircut">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=85"
+                    alt="Modern barbershop haircut">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85"
+                    alt="Fresh fade haircut">
+            </div>
+
         </div>
 
-        <div class="service">
-            <h3>Hair Washing</h3>
-            <p>₦2,000</p>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-text">
+
+            <p class="section-label">
+                ABOUT URBAN CUTS
+            </p>
+
+            <h2>
+                More Than<br>
+                Just a Haircut.
+            </h2>
+
         </div>
 
-        <div class="service">
-            <h3>Kids Haircut</h3>
-            <p>₦700</p>
+
+        <div class="about-content">
+
+            <p>
+                At Urban Cuts, we believe a great haircut
+                should do more than change your look.
+                It should change how you feel.
+            </p>
+
+            <p>
+                From clean fades to classic cuts and
+                precision beard grooming, our barbers
+                focus on the details that make every
+                visit worth it.
+            </p>
+
+            <a href="#contact" class="button">
+                Visit Us
+            </a>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section class="contact" id="contact">
+<section class="visit" id="visit">
 
-        <h2>Contact Us</h2>
+    <div class="container visit-grid">
 
-        <p>Phone: 0701 499 7531</p>
+        <div class="visit-info">
 
-    </section>
+            <p class="section-label">
+                FIND US
+            </p>
+
+            <h2>
+                Come Get<br>
+                Fresh.
+            </h2>
+
+            <p>
+                We're ready when you are. Stop by for a
+                fresh cut or book your appointment ahead
+                of time.
+            </p>
+
+            <div class="location">
+                <strong>📍 Location</strong>
+                <p>12 Main Street, Giginya Avenue, Kaduna, Nigeria</p>
+            </div>
+
+        </div>
+
+
+        <div class="hours">
+
+            <p class="section-label">
+                OPENING HOURS
+            </p>
+
+            <div class="hours-row">
+                <span>Monday</span>
+                <span>9:00 AM – 8:00 PM</span>
+            </div>
+
+            <div class="hours-row">
+                <span>Tuesday</span>
+                <span>9:00 AM – 8:00 PM</span>
+            </div>
+
+            <div class="hours-row">
+                <span>Wednesday</span>
+                <span>9:00 AM – 8:00 PM</span>
+            </div>
+
+            <div class="hours-row">
+                <span>Thursday</span>
+                <span>9:00 AM – 8:00 PM</span>
+            </div>
+
+            <div class="hours-row">
+                <span>Friday</span>
+                <span>9:00 AM – 8:00 PM</span>
+            </div>
+
+            <div class="hours-row">
+                <span>Saturday</span>
+                <span>10:00 AM – 9:00 PM</span>
+            </div>
+
+            <div class="hours-row">
+                <span>Sunday</span>
+                <span>12:00 PM – 6:00 PM</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+    <div class="container">
+
+        <p class="section-label">
+            CLIENT LOVE
+        </p>
+
+        <h2>What They Say.</h2>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Best haircut I've had in Abuja.
+                    The attention to detail is crazy."
+                </p>
+
+                <strong>
+                    — Daniel
+                </strong>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Great atmosphere, professional
+                    barbers and always a clean finish."
+                </p>
+
+                <strong>
+                    — Michael
+                </strong>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "I've been coming here for months.
+                    Never disappointed."
+                </p>
+
+                <strong>
+                    — Ibrahim
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+                <p class="section-label">
+                    COME VISIT US
+                </p>
+
+                <h2>Ready for a Fresh Cut?</h2>
+
+                <p>
+                    Call us or book your appointment
+                    through WhatsApp.
+                </p>
+
+                <a
+                    href="https://wa.me/2347014997531"
+                    class="button">
+                    Chat on WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>© 2026 Urban Cuts. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+<script>
+
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+
+    const links = navLinks.querySelectorAll("a");
+
+    links.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+</script>
 
 </body>
 
