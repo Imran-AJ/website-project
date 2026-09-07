@@ -662,3 +662,48 @@ footer {
     }
 
 }
+
+/* EXTRA RESPONSIVE FIXES */
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .nav-container {
+        width: 92%;
+    }
+
+    .hero {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 14vw, 65px);
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .service-card,
+    .review-card,
+    .hours {
+        width: 100%;
+    }
+
+    .button {
+        max-width: 100%;
+    }
+
+    .hours-row {
+        flex-wrap: wrap;
+    }
+
+}
