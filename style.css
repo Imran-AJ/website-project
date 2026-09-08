@@ -728,3 +728,49 @@ img {
 .directions-button:hover {
     opacity: 0.6;
 }
+
+/* ANIMATIONS */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeUp 1s ease forwards;
+}
+
+.service-card,
+.gallery-item,
+.review-card {
+    animation: fadeUp 0.8s ease both;
+}
+
+.service-card:nth-child(2),
+.review-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.service-card:nth-child(3),
+.review-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.gallery-item:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.gallery-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.gallery-item:nth-child(4) {
+    animation-delay: 0.45s;
+}
