@@ -36,8 +36,10 @@
             Urban Cuts
         </a>
 
-        <button class="menu-button" id="menuButton">
-            ☰
+        <button class="menu-button" id="menuButton" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
         <nav class="nav-links" id="navLinks">
@@ -448,7 +450,7 @@
     menuButton.addEventListener("click", function () {
 
         navLinks.classList.toggle("active");
-
+        menuButton.classList.toggle("active");
     });
 
 
@@ -459,6 +461,7 @@
         link.addEventListener("click", function () {
 
             navLinks.classList.remove("active");
+            menuButton.classList.rmove("active");
 
         });
 
