@@ -651,10 +651,21 @@ footer {
 
         box-shadow:
             0 20px 40px rgba(0, 0, 0, 0.4);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-15px);
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
     }
 
     .nav-links.active {
         display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 
     .nav-links a {
