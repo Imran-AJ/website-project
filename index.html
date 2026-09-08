@@ -466,6 +466,43 @@
 
 </script>
 
+<script>
+    const revealElements = document.querySelectorAll(
+        ".services, .gallery, .about, .visit, .reviews, .contact"
+    );
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    revealElements.forEach(function (element) {
+        element.classList.add("reveal");
+        observer.observe(element);
+    });
+</script>
+
+<script>
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
+
 </body>
 
 </html>
